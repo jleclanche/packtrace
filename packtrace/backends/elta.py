@@ -38,3 +38,12 @@ def track(tracking_number: str):
 		))
 
 	return ret
+
+
+if __name__ == "__main__":
+	import sys
+	from tabulate import tabulate
+
+	ret = track(sys.argv[1])
+
+	print(tabulate(ret))
